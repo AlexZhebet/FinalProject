@@ -1,0 +1,43 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.centr {
+    padding-right: calc(50vw - 185px);
+    padding-left: calc(50vw - 185px);
+
+@media screen and (min-width: 1020px) {
+        padding-right: calc(50vw - 510px);
+        padding-left: calc(50vw - 510px);
+    }
+}
+
+.line{
+     padding-left: avto;
+    position: relative;
+    display: inline-block;
+    &::after {
+    content: " ";
+    background: #e6e6f0;
+    left: auto;
+    width: 375px;
+    height: 2px;
+    bottom: 15px;
+    position: absolute;
+    @media screen and (min-width: 1020px) {
+ content: " ";
+        background: #e6e6f0;
+        left: auto;
+        width: 1020px;
+        height: 2px;
+        bottom: 15px;
+        position: absolute;
+        }
+}
+
+    }
