@@ -1,0 +1,178 @@
+.offer {
+    animation-name: offer__tagline;
+    animation-duration: 1s;
+
+    &__tagline {
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1020px) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 65px;
+            gap: 30px;
+        }
+    }
+
+    &__title {
+        max-width: 315px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #f0145a;
+        margin-left: 30px;
+
+        @media screen and (min-width: 1020px) {
+            font-size: 38px;
+            line-height: 46px;
+            max-width: 486px;
+        }
+    }
+
+    &__more {
+        max-width: 315px;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        margin-left: 30px;
+
+        @media screen and (min-width: 1020px) {
+            max-width: 486px;
+        }
+
+        &--line {
+            max-width: 315px;
+            font-size: 19px;
+            line-height: 30px;
+            color: #000000;
+            position: relative;
+            display: inline-block;
+            margin-left: 30px;
+
+            @media screen and (min-width: 1020px) {
+                max-width: 486px;
+            }
+
+            &::after {
+                content: " ";
+                background: #e6e6f0;
+                width: 4px;
+                height: 290px;
+                right: 320px;
+                position: absolute;
+                top: 48%;
+                transform: translateY(50%);
+
+                @media screen and (min-width: 1020px) {
+                    height: 300px;
+                    right: -50px;
+                    position: absolute;
+                    top: -330%;
+                }
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+
+        & a {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            color: #f0145a;
+            text-decoration: none;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+
+    &__container {
+        background: linear-gradient(264.71deg, #F01432 0%, #323264 29.69%), url("../img/Photo11.jpg");
+        background-blend-mode: screen;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+        padding-top: 65px;
+        padding-bottom: 50px;
+
+        @media screen and (min-width: 1020px) {
+            padding-top: 180px;
+            padding-bottom: 130px;
+        }
+
+    }
+
+    &__centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        color: #ffffff;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+
+        @media screen and (min-width: 1020px) {
+            font-size: 86px;
+            line-height: 105px;
+            text-align: center;
+            letter-spacing: 63px;
+        }
+    }
+
+    &__lead {
+        margin-top: 30px;
+
+        @media screen and (min-width: 1020px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+            margin-top: 60px;
+        }
+    }
+
+    &__expression {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #f0145a;
+        padding-bottom: 60px;
+        margin-left: 30px;
+        max-width: 315px;
+
+        @media screen and (min-width: 1020px) {
+            font-size: 38px;
+            line-height: 46px;
+            max-width: 362px;
+            margin-right: 60px;
+        }
+    }
+
+}
+
+@keyframes offer__tagline {
+    from {
+        opacity: 0;
+        transform-origin: 50% 0%;
+        transform: scale(.2) translate(0%, -200%);
+    }
+
+    to {
+        opacity: 1;
+        transform-origin: 50% 0%;
+        transform: scale(1) translate(0%, 0%);
+    }
+}
